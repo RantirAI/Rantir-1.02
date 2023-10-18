@@ -26,4 +26,14 @@ export class AuthController {
 		const resp: IServiceData = await this.authService.signUp(signUpDto);
 		return this.controllerErrorHandler.handleResponse(resp);
 	}
+
+	@Post('/email/requests')
+	async createLoginEmailRequest(@Body() body: any) {
+		return this.controllerErrorHandler.handleResponse({ data: 'success' });
+	}
+
+	@Post('/google/callback')
+	async postGoogleLoginCallback(@Body() body: any) {
+		return this.controllerErrorHandler.handleResponse({ data: 'success' });
+	}
 }
