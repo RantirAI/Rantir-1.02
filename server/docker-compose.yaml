@@ -1,0 +1,56 @@
+version: '3'
+name: rantir-project
+services:
+  db:
+    container_name: rantir-db
+    image: postgres:15-alpine
+    init: true
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_USER: test
+      POSTGRES_DB: rantir_testing
+    ports:
+      - '5432:5432'
+    networks:
+      - rantir-network
+    volumes:
+      - RANTIR-DB-PGDATA:/var/lib/postgresql/data
+  be:
+    container_name: rantir-be
+    build:
+      context: .
+      target: prod
+    image: rantir-be
+    init: true
+    depends_on:
+      - db
+    ports:
+      - '8080:8080'
+    networks:
+      - rantir-network
+    environment:
+      BE_PORT: 8080
+
+      DB_URL: postgresql://test:test@db:5432/sysonex_testing?schema=public&connect_timeout=300
+
+      JWT_SECRET: SECRET
+
+      NODE_ENV: dev
+
+      MAIL_HOST: rantir.io
+      MAIL_USER: rantir@rantir.io
+      MAIL_PASS: Ch1ttag0ng*
+      MAIL_FROM: noreply@rantir.io
+
+      ADMIN_EMAIL: mhosain@rantir.io
+      ADMIN_PASS: strong-password
+      ADMIN_USERNAME: admin
+      ADMIN_FIRST_NAME: John
+      ADMIN_LAST_NAME: Doe
+
+    expose:
+      - '8080'
+volumes:
+  SYSRISK-DB-PGDATA:
+networks:
+  sysrisk-network:
