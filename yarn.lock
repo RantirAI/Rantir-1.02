@@ -1787,6 +1787,13 @@
   dependencies:
     clsx "2.0.0"
 
+"@mantine/dropzone@^7.1.5":
+  version "7.1.5"
+  resolved "https://registry.npmjs.org/@mantine/dropzone/-/dropzone-7.1.5.tgz"
+  integrity sha512-bqaYpVEEXlAowLGpcqvpN6a1jOPHlwMYOdxQ8KVyOnraX6A5F8qEjf3s3JVM4jMi2Qz25x6G2hCdwofCh5PP+Q==
+  dependencies:
+    react-dropzone-esm "15.0.1"
+
 "@mantine/form@^7.1.5":
   version "7.1.5"
   resolved "https://registry.npmjs.org/@mantine/form/-/form-7.1.5.tgz"
@@ -8102,6 +8109,13 @@ react-dev-utils@^12.0.1:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-dropzone-esm@15.0.1:
+  version "15.0.1"
+  resolved "https://registry.npmjs.org/react-dropzone-esm/-/react-dropzone-esm-15.0.1.tgz"
+  integrity sha512-RdeGpqwHnoV/IlDFpQji7t7pTtlC2O1i/Br0LWkRZ9hYtLyce814S71h5NolnCZXsIN5wrZId6+8eQj2EBnEzg==
+  dependencies:
+    prop-types "^15.8.1"
+
 react-error-overlay@^6.0.11:
   version "6.0.11"
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
@@ -8273,7 +8287,7 @@ react-transition-group@4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-"react@^0.14 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.5.1 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", react@^18.0.0, react@^18.2.0, "react@>= 16", "react@>= 16.8.0", react@>=16.6.0, react@>=16.8, react@>=16.8.0:
+"react@^0.14 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.5.1 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", react@^18.0.0, react@^18.2.0, "react@>= 16", "react@>= 16.8 || 18.0.0", "react@>= 16.8.0", react@>=16.6.0, react@>=16.8, react@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
