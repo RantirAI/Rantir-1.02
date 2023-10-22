@@ -1,0 +1,12 @@
+
+  .form {
+    min-height: 100vh;
+    width: 100%;
+    @media (max-width: $mantine-breakpoint-sm) {
+      max-width: 100%;
+    }
+}
+  
+  .title {
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  }

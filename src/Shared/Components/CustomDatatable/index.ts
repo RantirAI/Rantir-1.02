@@ -1,1 +1,0 @@
-export { CustomDatatable } from './CustomDatatable';
