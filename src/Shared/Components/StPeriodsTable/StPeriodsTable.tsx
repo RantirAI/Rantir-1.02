@@ -1,5 +1,4 @@
 import { Box, Button, Center, Title } from '@mantine/core';
-import { CustomDatatable } from '@/Shared/Components';
 import { useAppSelector } from '@/Redux/hooks';
 
 import { axios } from '@/Config';

@@ -1,6 +1,7 @@
 import { MantineThemeOverride } from '@mantine/core';
 
 export const customThemeConfig: MantineThemeOverride = {
+  primaryColor: "violet",
   colors: {
     blue: [
       '#6a84a6',
@@ -15,6 +16,9 @@ export const customThemeConfig: MantineThemeOverride = {
       '#275cab'
     ]
   },
-  fontFamily: 'arial,sans-serif',
+  fontFamily: 'Pretendard',
+  headings: {
+    fontFamily: 'Pretendard'
+  },
   defaultRadius: '0'
 };
