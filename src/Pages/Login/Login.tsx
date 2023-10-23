@@ -47,19 +47,19 @@ export const Login = () => {
           <Checkbox label="Remember me" mt="xl" size="md" />
 
           <Flex justify="end" w="100%">
-            <Button mt="xl" size="md" radius="sm">
+            <Button mt="xl" size="md" radius="sm" bg={"violet"}>
               Sign In
             </Button>
           </Flex>
 
           <Text mt="md">
-            <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()}>
+            <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()} c="violet">
               Lost your password?
             </Anchor>
           </Text>
           <Text>
             Don&apos;t have an account?{' '}
-            <Anchor<'a'> href="/register" fw={700} onClick={(event) => navigate('/register')}>
+            <Anchor<'a'> href="/register" fw={700} onClick={(event) => navigate('/register')} c="violet">
               SignUp Now
             </Anchor>
           </Text>
@@ -70,10 +70,10 @@ export const Login = () => {
             <Text size="sm" mr={8}>
               ©2019-2024 All Rights Reserved. Rantir®
             </Text>
-            <Anchor<'a'> href="#" size="sm" onClick={(event) => event.preventDefault()}>
+            <Anchor<'a'> href="#" size="sm" onClick={(event) => event.preventDefault()} c="violet">
               Cookie Policy
             </Anchor>
-            <Anchor<'a'> href="#" size="sm" onClick={(event) => event.preventDefault()}>
+            <Anchor<'a'> href="#" size="sm" onClick={(event) => event.preventDefault()} c="violet">
               Privacy and Terms
             </Anchor>
           </Group>
