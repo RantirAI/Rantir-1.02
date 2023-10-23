@@ -7,5 +7,43 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("POSTGRES_URL")
+}
+
+model User {
+  id        Int        @id @default(autoincrement())
+  name      String
+  email     String     @unique
+  password  String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  userTeams UserTeam[]
+}
+
+model Team {
+  id        Int        @id @default(autoincrement())
+  name      String
+  imageUrl  String     @default("https://via.placeholder.com/150")
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  teamUsers UserTeam[]
+}
+
+model Permission {
+  id        Int        @id @default(autoincrement())
+  name      String     @unique
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  UserTeam  UserTeam[]
+}
+
+model UserTeam {
+  userId       Int
+  teamId       Int
+  permissionId Int
+  user         User       @relation(fields: [userId], references: [id])
+  team         Team       @relation(fields: [teamId], references: [id])
+  permission   Permission @relation(fields: [permissionId], references: [id])
+
+  @@id([userId, teamId])
 }
