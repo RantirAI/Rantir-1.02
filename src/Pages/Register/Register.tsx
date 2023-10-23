@@ -76,7 +76,7 @@ export const Register = () => {
           </Group>
 
           <Flex justify="start">
-            <Button mt="xl" size="md" radius="sm">
+            <Button mt="xl" size="md" radius="sm" bg="violet">
               Create a new account
             </Button>
           </Flex>
@@ -89,10 +89,10 @@ export const Register = () => {
               ©2019-2024 All Rights Reserved. Rantir®
             </Text>
             <Group>
-              <Anchor<'a'> href="#" size='sm' onClick={(event) => event.preventDefault()}>
+              <Anchor<'a'> href="#" size='sm' onClick={(event) => event.preventDefault()} c="violet">
                 Cookie Policy
               </Anchor>
-              <Anchor<'a'> href="#" size='sm' onClick={(event) => event.preventDefault()}>
+              <Anchor<'a'> href="#" size='sm' onClick={(event) => event.preventDefault()} c="violet">
                 Privacy and Terms
               </Anchor>
             </Group>
