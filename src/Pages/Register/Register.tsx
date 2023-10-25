@@ -76,7 +76,7 @@ export const Register = () => {
           </Group>
 
           <Flex justify="start">
-            <Button mt="xl" size="md" radius="sm" bg="violet">
+            <Button mt="xl" size="md" bg="violet">
               Create a new account
             </Button>
           </Flex>

@@ -6,5 +6,5 @@ export const customThemeConfig: MantineThemeOverride = {
   headings: {
     fontFamily: 'Pretendard'
   },
-  defaultRadius: '0'
+  defaultRadius: '4px'
 };
