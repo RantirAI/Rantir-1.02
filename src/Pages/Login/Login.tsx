@@ -47,7 +47,7 @@ export const Login = () => {
           <Checkbox label="Remember me" mt="xl" size="md" />
 
           <Flex justify="end" w="100%">
-            <Button mt="xl" size="md" radius="sm" bg={"violet"}>
+            <Button mt="xl" size="md" bg={"violet"}>
               Sign In
             </Button>
           </Flex>
