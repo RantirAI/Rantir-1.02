@@ -17,11 +17,6 @@ export const Layout = ({ children, admin, both }: any) => {
         breakpoint: 'sm',
         collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
       }}
-      aside={{
-        width: 300,
-        breakpoint: 'sm',
-        collapsed: { mobile: !sidebarMobileOpened, desktop: true },
-      }}
       padding="md"
       style={{ overflow: "hidden" }}
     >
@@ -35,9 +30,6 @@ export const Layout = ({ children, admin, both }: any) => {
         </Box>
         <Footer />
       </AppShell.Main>
-      <AppShell.Aside>
-        <Aside sidebarMobileOpened={sidebarMobileOpened} toggleSidebarMobile={toggleSidebarMobile} />
-      </AppShell.Aside>
     </AppShell>
     // </AuthGuard>
   );

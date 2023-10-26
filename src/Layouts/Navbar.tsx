@@ -1,6 +1,6 @@
 import { iconPNG } from '@/Shared/Images'
-import { ActionIcon, Badge, Burger, Button, Group, Image, Menu, Paper, Skeleton, Stack, Text, UnstyledButton, rem } from '@mantine/core'
-import { IconArrowLeft, IconArrowRight, IconBox, IconChargingPile, IconChevronDown, IconDashboard, IconDots, IconFilePlus, IconGlobe, IconLayout, IconLayoutDashboard, IconPlus, IconSettings, IconSquareRounded, IconStar, IconTable, IconWorldShare } from '@tabler/icons-react'
+import { ActionIcon, Badge, Burger, Button, Group, Image, Menu, Paper, Skeleton, Stack, Text, TextInput, UnstyledButton, rem } from '@mantine/core'
+import { IconArrowLeft, IconArrowRight, IconBox, IconChargingPile, IconChevronDown, IconDashboard, IconDots, IconFilePlus, IconGlobe, IconLayout, IconLayoutDashboard, IconPlus, IconSearch, IconSettings, IconSquareRounded, IconStar, IconTable, IconWorldShare } from '@tabler/icons-react'
 
 type Props = {
     desktopOpened: boolean,
@@ -52,7 +52,8 @@ export const Navbar = ({ desktopOpened, mobileOpened, toggleMobile, toggleDeskto
                     </Group>
                     <Badge variant='filled' bg="#FFBF00">90+</Badge>
                 </Group>
-                <Button my={5} fullWidth>
+                <TextInput hiddenFrom='sm' placeholder="Type anywhere to search" leftSection={<IconSearch size={20} />} />
+                <Button mb={5} fullWidth>
                     <IconFilePlus size={20} />
                     <Text size='md'>New Document</Text>
                 </Button>

@@ -120,7 +120,6 @@ export const Header = ({ mobileOpened, toggleMobile, toggleSidebarMobile }: Prop
                         </Menu>
                     </Group>
                 </Group>
-                <Burger onClick={toggleSidebarMobile} hiddenFrom="sm" size="sm" />
             </Flex>
         </>
     )
