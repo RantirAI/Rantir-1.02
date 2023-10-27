@@ -14,11 +14,7 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
       const prisma = new PrismaClient();
 
       await prisma.permission.createMany({
-        data: [
-          { id: 1, name: 'admin' },
-          { id: 2, name: 'member' },
-          { id: 3, name: 'viewer' }
-        ],
+        data: [{ name: 'admin' }, { name: 'member' }, { name: 'viewer' }],
         skipDuplicates: true
       });
     } catch (e) {
