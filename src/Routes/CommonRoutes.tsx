@@ -2,6 +2,7 @@ import { Layout } from '@/Layouts';
 import { RouteType } from './Types';
 
 import { Home, Login, Register } from '@/Pages';
+import { Document } from '@/Pages/Document';
 
 export const CommonRoutes: RouteType[] = [
   {
@@ -9,6 +10,14 @@ export const CommonRoutes: RouteType[] = [
     element: (
       <Layout>
         <Home />
+      </Layout>
+    )
+  },
+  {
+    path: '/document',
+    element: (
+      <Layout>
+        <Document />
       </Layout>
     )
   },
